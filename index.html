@@ -1,0 +1,20 @@
+<!DOCTYPE html><html>
+<head><title>Palette Randomizer</title></head>
+<body>
+<div id="red"></div>
+<div id="yellow"></div>
+<div id="blue"></div>
+<br>
+<div>Refresh the page for a new combination.</div>
+
+<script>
+let reds = ["Cad scarlet", "Cad red", "quin red", "alizarin", "magenta", "permanent mauve", "cobalt violet", "Terra rosa", "cadmium barium red", "naphtha red", "Venetian red", "transparent oxide red"];
+let yellows = ["cad yellow lemon", "cad yellow light", "cad yellow deep", "transparent yellow oxide", "Indian yellow", "Naples yellow", "yellow ochre", "french raw sienna"];
+let blues = ["cobalt blue light", "cobalt teal", "ultramarine blue deep", "Pthalo blue", "sleeping beauty turquoise", "kings blue light"];
+document.getElementById('red').innerHTML = reds[Math.floor(Math.random() * reds.length)];
+document.getElementById('yellow').innerHTML = yellows[Math.floor(Math.random() * yellows.length)];
+document.getElementById('blue').innerHTML = blues[Math.floor(Math.random() * blues.length)];
+</script>
+
+</body>
+</html>
